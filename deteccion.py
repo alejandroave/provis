@@ -4,7 +4,7 @@ import time
 from PIL import Image, ImageDraw,ImageFont
 
 #cv.NamedWindow("Deteccion", 0)
-
+#f=open("sim.txt","w")
 arra = []
 '''
 def detec(imagen1,imagen2):
@@ -140,23 +140,28 @@ def main():
     global arra
     font = cv.InitFont(cv.CV_FONT_HERSHEY_SIMPLEX, 1, 1, 0, 3, 3) #Creates a font
     #fuente = ImageFont.truetype('/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-C.ttf',20)
+    proses  = 0
+    sumaa = 0
     while True:
         img = cv.QueryFrame(capture)
+        #cv.Resize(img,img,cv.CV_INTER_CUBIC)
+        #tiempoi = time.time()
         #draw = ImageDraw.Draw(img)
         anch,alt = cv.GetSize(img)
         k = cv.WaitKey(10);
-        cv.SaveImage("test.jpg",img)
+        #cv.SaveImage("test.jpg",img)
         cv.Smooth(img,img,cv.CV_GAUSSIAN,9,9) ##menos ruido
-        cv.SaveImage("sruido.jpg",img)
+        #cv.SaveImage("sruido.jpg",img)
         grey=    cv.CreateImage(cv.GetSize(img),8,1)
         bn =  cv.CreateImage(cv.GetSize(img), 8, 1);
         cv.CvtColor(img,grey,cv.CV_BGR2GRAY)  ###escala de grises        
+        #cv.SaveImage("gris.jpg",grey)
         cv.ConvertImage(img, bn, 0);
         threshold=40
         colour=255
         cv.Threshold(grey,grey, threshold,colour,cv.CV_THRESH_BINARY) ##binarizacion
         cv.Canny( grey, bn, 1, 1, 3)
-        cv.SaveImage("cont.jpg",bn)
+        #cv.SaveImage("cont.jpg",bn)
         cv.SaveImage("grey.jpg",grey)
         cambio("grey.jpg")
         imgg = cv.LoadImage('ngrey.jpg',cv.CV_LOAD_IMAGE_GRAYSCALE)
@@ -189,7 +194,14 @@ def main():
         for i in range(len(nuevo)):
             x,y,z = nuevo[i]
             cv.PutText(img,""+z+"", (x,y),font, 255)        
+        tiempof = time.time()
         cv.ShowImage('img',img)
+        #cv.SaveImage("final.jpg",img)
+        #tiempoa = tiempof - tiempoi
+        #proses += 1
+        #sumaa  =  sumaa + tiempoa
+        #print float(sumaa)/float(proses)
+        #f.write(""+str(proses)+" "+str(tiempoa)+"\n")
         if k == 'f':
             break
 main()
