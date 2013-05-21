@@ -140,7 +140,7 @@ def de(puntos,anch,alt):
     
 
 def main():
-    captura = cv.CreateCameraCapture(0) ##guardamos la imagen de la camara web usb
+    captura = cv.CreateCameraCapture(1) ##guardamos la imagen de la camara web usb
     global arra ##cargamos el arreglo de los objetos
     font = cv.InitFont(cv.CV_FONT_HERSHEY_SIMPLEX, 1, 1, 0, 3, 3) #creamos el fondo para las letras
     proses  = 0
