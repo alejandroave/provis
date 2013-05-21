@@ -4,7 +4,7 @@ Detección de obstaculos
 Instalación:
 ============
 
-=Para sistema operativo ubuntu=
+Para sistema operativo ubuntu:
 
 1-. Para utilizar el software es necesario 
 instalar las librerías de opencv y PIL.       
