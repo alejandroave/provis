@@ -21,3 +21,11 @@ Se recomienda utilizar la aplicación junto
 con una camara web y solo cambiar la linea donde 
 se inicializa la camara, tambien se recomienda   
 utlizar el software con buena iluminación.      
+
+Condiciones y uso del software
+==============================
+Este software es libre no es necesario pagar por 
+el, puede ser modificado, usado.
+
+Gracias por visitarnos
+====
