@@ -1,22 +1,23 @@
-provis
-======
+Detección de obstaculos
+================================
 
-deteccion de obstaculos
-==============================================
-Para poder utilziar el software es necesario =
-instalar las librerias de opencv y PIL       =
-                                             = 
-Ambas librerias se pueden instalar desde     =
-desde el gestor de paquetes Synaptic         =
-                                             =
-Teniendo estas librerias se puede utilzar    =
-el software sin  problema alguno             =
-==============================================
+Instalación:
+============
+
+1-. Para utilizar el software es necesario 
+instalar las librerías de opencv y PIL.       
+                                              
+2-. Ambas librerías se pueden instalar desde     
+desde el gestor de paquetes Synaptic.         
+                                             
+3-. Teniendo estas librerías se puede utilzar    
+el software sin  problema alguno.             
 
 
-==================================================
-Se recomienda utilizar la aplicación junto       =
-con una camara web y solo cambiar la linea donde =
-se inicializa la camara, tambien se recomienda   =
-utlizar el software con buena iluminación        =
-=================================================
+
+Recomendaciones
+===============
+Se recomienda utilizar la aplicación junto       
+con una camara web y solo cambiar la linea donde 
+se inicializa la camara, tambien se recomienda   
+utlizar el software con buena iluminación.      
