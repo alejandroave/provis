@@ -4,11 +4,16 @@ Detección de obstaculos
 Instalación:
 ============
 
+=Para sistema operativo ubuntu=
+
 1-. Para utilizar el software es necesario 
 instalar las librerías de opencv y PIL.       
                                               
 2-. Ambas librerías se pueden instalar desde     
-desde el gestor de paquetes Synaptic.         
+desde el gestor de paquetes Synaptic o desde la terminal.
+
+-> sudo apt-get install python-opencv
+-> sudo apt-get install python-imaging         
                                              
 3-. Teniendo estas librerías se puede utilzar    
 el software sin  problema alguno.             
